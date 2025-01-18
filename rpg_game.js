@@ -6,6 +6,10 @@ function updateMessage(text) {
 }
 
 function startGame() {
+    // Hide the intro text
+    document.getElementById("intro").style.display = "none";
+
+    // Update the game message and show action buttons
     updateMessage("An enemy appears! Choose your action.");
     document.getElementById("attackBtn").style.display = "inline-block";
     document.getElementById("potionBtn").style.display = "inline-block";
