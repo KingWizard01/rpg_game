@@ -79,12 +79,14 @@ function updateScene(sceneKey) {
         gameDiv.appendChild(button);
     });
 
-    // Add the persistent "Start Over" button
-    const startOverBtn = document.createElement("button");
-    startOverBtn.innerText = "Start Over";
-    startOverBtn.onclick = () => updateScene("intro");
-    startOverBtn.style.marginTop = "20px";
-    gameDiv.appendChild(startOverBtn);
+    // Add the "Start Over" button only if it's NOT the intro scene
+    if (sceneKey !== "intro") {
+        const startOverBtn = document.createElement("button");
+        startOverBtn.innerText = "Start Over";
+        startOverBtn.onclick = () => updateScene("intro");
+        startOverBtn.style.marginTop = "20px";
+        gameDiv.appendChild(startOverBtn);
+    }
 }
 
 // Start the game by loading the intro scene
