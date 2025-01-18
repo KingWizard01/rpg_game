@@ -6,9 +6,11 @@
 <body>
     <div id="game">
         <h1>Murders of Grubennstein</h1>
-        <p id="message">Welcome to the game! You are a detective who has been hired to investigate a series of murders in the small town of Grubennstein. Local plebs blame everyone from vampires and werewolves to witches and politicians.</p>
-        <p>But will you be clean and honest in your pursuit of justice? Or will you accept corrupt coin and promises of power so long as you cover up the truth?</p>
-        <p>Click "Start Game" to begin.</p>
+        <div id="intro">
+            <p id="message">Welcome to the game! You are a detective who has been hired to investigate a series of murders in the small town of Grubennstein. Local plebs blame everyone from vampires and werewolves to witches and politicians.</p>
+            <p>But will you be clean and honest in your pursuit of justice? Or will you accept corrupt coin and promises of power so long as you cover up the truth?</p>
+            <p>Click "Start Game" to begin.</p>
+        </div>
         <button onclick="startGame()">Start Game</button>
         <button onclick="attack()" style="display:none;" id="attackBtn">Attack</button>
         <button onclick="usePotion()" style="display:none;" id="potionBtn">Use Potion</button>
